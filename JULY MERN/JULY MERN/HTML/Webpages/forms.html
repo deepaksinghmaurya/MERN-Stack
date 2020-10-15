@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction</title>
+</head>
+<body>
+    <h2>Please Enter your details!</h2>
+
+    <form>
+
+        <label for="username">Enter Your name:</label>
+        <input type="text" id="username" name="username" required> <br><br/>
+
+        <label for="email">Enter Your email address:</label>
+        <input type="email" id="email" name="email" required> <br><br/>
+
+        <label for="password">Create a password:</label>
+        <input type="password" id="password" name="password" required> <br><br/>
+
+        <p>Select your age group</p>
+        <input type="radio" id="age-g1" name="age" value="10-18">
+        <label for="age">10-18 Years</label> <br><br>
+        <input type="radio" id="age-g2" name="age" value="19-40">
+        <label for="age">19-40 Years</label> <br><br>
+        <input type="radio" id="age-g3" name="age" value="41+">
+        <label for="age">41 Years and above</label> <br><br>
+        <!-- <input type="radio" id="years" name="years">
+        <label for="years">Age group</label> <br><br/> -->
+
+        <label for="security">Security Question</label>
+        <select required>
+            <option value="answer1">What is your first pet name?</option>
+            <option value="answer2">Where did you start your schooling?</option>
+            <option value="answer3">Which is your favorite sport?</option>
+        </select> <br><br>
+
+        <label for="answer">Answer:</label>
+        <textarea rows="5" cols="40" placeholder="describe your answer......."></textarea><br><br>
+
+        <label for="birthday">Enter your birthdate</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

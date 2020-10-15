@@ -1,0 +1,97 @@
+/*                GRID 
+    <---------------header--------------------->
+    <---aside---><-----------main-------------->  
+    <---------------footer---------------------> 
+*/
+
+/* 
+            FLEX
+
+    <----PART-1-------------PART-2-------------->
+
+    ^
+    I
+    I
+    I
+    I
+    ^
+*/
+
+body{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px 50% auto 60px;
+    grid-template-areas: "head head"
+                         "sidebar main"
+                         "sectionText sectionText"
+                         "footer footer";
+
+}
+
+header, aside, main, footer{
+    text-align: center;
+}
+
+header{
+    background: purple;
+    color: white;
+    grid-area: head;
+}
+
+aside{
+    background: peru;
+    grid-area: sidebar;
+}
+
+main{
+    background: lightgreen;
+    grid-area: main;
+}
+
+.sectionArea{
+    grid-area: sectionText;
+    background: lightgray;
+}
+
+footer{
+    background: black;
+    color: white;
+    grid-area: footer;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'sectionOne sectionTwo';
+}
+
+.section-one{
+    grid: sectionOne;
+}
+
+.section-two{
+    grid: sectionTwo;
+}
+
+.nav-list{
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+}
+
+.nav-list-item{
+    margin: 0 10px;
+    /* font-size: 10px; */
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background: lightblue;
+            font-family:'Courier New', Courier, monospace;
+            color: black;
+        }
+        h3{
+            font-size: 26px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        p{
+            text-align: center;
+            word-spacing: 2px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+</head>
+<body>
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam dolore odit tenetur animi pariatur dolores ut odio inventore, quas magnam fugiat! Consequatur labore perspiciatis molestias rerum dolorem et omnis.</p>
+
+    <form id='contact-form' method='POST' action='/about'>
+        <label>Contact Person</label>
+        <input type="text" id="contact-person">
+        <label>Department</label>
+        <input type="text" id="department">
+        <label>Your email</label>
+        <input type="email" id="email">
+        <input type="submit" value="Contact">
+    </form>
+</body>
+</html>

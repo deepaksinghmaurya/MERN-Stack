@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel='stylesheet' href='./style.css'>
+    <title>Class Based Components</title>
+</head>
+<body>
+    <h1>2nd React App</h1>
+    <div id='root'></div>
+
+    <script type="text/babel">
+        
+        class Profile extends React.Component{
+            state = {
+                name: 'John Doe',
+                age: 30,
+                address: 'London'
+            }
+
+            // this.handleClick = this.handleCLick.bind(this);
+
+            handleClick = () => {
+                console.log('Click event fired!!')
+                console.log(this.state);
+
+            }
+
+            render(){
+                console.log('I am a render Function!!');
+                return(
+                    <div className='profile'>
+                        <h2>Name: {this.state.name}</h2>
+                        <p>Age: {this.state.age}</p>   
+                        <p>Address: {this.state.address}</p> 
+                        <button onClick={this.handleClick}>Click!!!</button>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<Profile />, document.querySelector('#root'));
+
+    </script>
+</body>
+</html>

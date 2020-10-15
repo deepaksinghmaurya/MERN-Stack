@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel='stylesheet' href='/assets/style.css'>
+</head>
+<body>
+    <!-- /profile?John -->
+    <h1>Welcome <%= person %> </h1>
+
+    <div>
+        <p><strong>Age:</strong> <%= data.age %></p>
+        <p><strong>Job:</strong> <%= data.job %></p>
+        <h3>Hobbies</h3>
+        <ul>
+            <% data.hobbies.forEach( hobby => { %>
+            <li><%= hobby %></li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>

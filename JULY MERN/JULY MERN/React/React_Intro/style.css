@@ -1,0 +1,10 @@
+.profile{
+    background: lightsalmon;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    border: 3px dashed black;
+    color: white;
+}

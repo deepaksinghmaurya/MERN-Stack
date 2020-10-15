@@ -1,0 +1,143 @@
+/* h1{
+    color: rebeccapurple;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(177, 101, 101);
+}
+
+h2{
+    font-size: 24px;
+    color: #347547;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: unset;
+    color: paleturquoise;
+    font-size: 15px;
+}
+
+h2{
+    color: blue;
+} */
+
+/* Selectors */
+
+/* .header {
+  background: darkblue;
+  color: white;  
+}
+
+.header p{
+    color: lightblue;
+}
+
+#info{
+    background: darkgray;
+    color: black;
+}
+
+#info h2{
+    color: darkkhaki;
+} */
+
+
+/* Specificity */
+/* inline > internal Style > external style */
+/* 
+    element - 1
+    class - 10
+    id - 100
+*/
+
+/* 100 */
+/* #div-one{
+    background: purple;
+}  */
+
+/* 10 */
+/* .header{
+    background: powderblue;
+    color: white;
+} */
+
+/* 1 100 10 = 111 */
+/* div#div-one.header{
+    background: black !important;
+} */
+
+/* 1 */
+/* div.header{
+    background: red !important;
+} */
+
+/* Inheritence */
+
+/* #div-one{
+    font-size: 20px;
+    text-decoration: underline;
+} */
+
+body{
+    /* background-image: url('./background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  */
+}
+/* Box Model */
+
+.box{
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-image: url('./background.jpeg');
+    color: rgb(51, 48, 10);
+}
+
+.box h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.box p{
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    height: 140px;
+    overflow: scroll;
+}
+
+img{
+    opacity: 0.4;
+}
+
+/* pseudo classes */
+/* 
+    a:link
+    a:visited
+    a:hover
+    a:active
+
+    structural pseudo classes
+    :first-child
+
+*/
+img:hover{
+    opacity: 1;
+}
+
+div:first-child{
+    color: brown;
+}
+
+
+
+
+
